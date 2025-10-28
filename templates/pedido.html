@@ -1,15 +1,14 @@
 {% extends "base.html" %}
-
 {% block title %}Inicio{% endblock %}
-
 {% block content %}
 <div class="container-fluid" style="position: absolute;">
+    <!-- Información de ejemplo de la tienda -->
     <h4>Pedido No. xxxx</h4>
-    <h6>Tienda: xxxxxxxxxxxxxxxxxxxx  Contacto: xxxxxxxxxxxxxxxxxxxx</h6>
-    <h6>Dirección: xxxxxxxxxxxxxxxxxxxx  Teléfono: 999999999</h6>
+    <h6>Tienda: xxxxxxxxxxxxxxxxxxxxx Contacto: xxxxxxxxxxxxxxxxxxxxx</h6>
+    <h6>Dirección: xxxxxxxxxxxxxxxxxxxxx Teléfono: 99999999</h6>
 
     <form id="pedidoForm">
-        <table>
+        <table class="table">
             <tr>
                 <th>Código</th>
                 <th>Producto</th>
@@ -61,12 +60,11 @@
             <tr class="total">
                 <td></td><td></td><td></td>
                 <td>Total Bs.</td>
-                <td><input type="number" id="total" readonly></td>
+                <td><input id="total" type="number" name="total" readonly></td>
             </tr>
         </table>
 
-        <br>
-        <a class="btn btn-primary" href="/" style="color: white;">Cancelar</a>
+        <a class="btn btn-primary" href="#" style="color: white;">Cancelar</a>
         <a class="btn btn-success" href="#" style="color: white;">Entregar Pedido</a>
     </form>
 </div>
